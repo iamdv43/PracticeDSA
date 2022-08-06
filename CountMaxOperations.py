@@ -1,18 +1,11 @@
 def countMaxOperation(log, target):
     log = list(log)
     target = list(target)
-    found = True
-    count = 0
-    while found:
-        for i in target:
-            if i in log:
-                log.remove(i)
-            else:
-                found = False
-        if found:
-            count += 1
+    count = len(log)
+    for i in target:
+        count = min(count, log.count(i))
     return count
-
+    
 log = 'mononom'
 target = 'mon'
 print('Case 1: Count is ', countMaxOperation(log, target))
