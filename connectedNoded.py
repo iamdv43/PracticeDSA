@@ -9,7 +9,7 @@ def connectedSums(n, edges):
         nodes[y-1]=nodes[x-1]
     connectednodes = {}
     for i in set(nodes):
-        connectednodes[i] = nodes.count(i))
+        connectednodes[i] = nodes.count(i)
     res=0
     for i,c in connectednodes.items():
         res+=math.ceil(math.sqrt(c))
