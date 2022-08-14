@@ -29,4 +29,8 @@ def getSmallestInefficiencies(skills, k):
     return ans
 
 
+print("Ans: ", getSmallestInefficiencies([6, 9, 1], 2))
 print("Ans: ", getSmallestInefficiencies([ 3, 1, 5, 4], 3))
+print("Ans: ", getSmallestInefficiencies([6, 9, 1, 2, 4, 7, 9, 10], 4))
+print("Ans: ", getSmallestInefficiencies([9,10,7,10,6,1,5,4,9,8], 5))
+
