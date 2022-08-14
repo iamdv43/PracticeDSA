@@ -9,7 +9,10 @@ def combinationSum(candidates, target):
                 res.append(path)
                 return False
             for i in range(idx, n):
-                if dfs(i, target - candidates[i], path + [candidates[i]]):
+                # Two cases in DFS:
+                # Case 1: Same number chosen multiple times => i
+                # Case 2: Only unique numbers in combinations => i+1
+                if dfs(i, target - candidates[i], path + [candidates[i]]): 
                     break
                     
         dfs(0, target, [])
