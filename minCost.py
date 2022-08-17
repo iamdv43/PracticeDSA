@@ -6,5 +6,5 @@ def minCost(parcels, k):
     return cost
 
 parcels = [2,3,6,10,11]
-k=25
+k=10
 print("Min cost: ", minCost(parcels, k))
