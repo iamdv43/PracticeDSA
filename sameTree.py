@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/same-tree/discuss/32894/Python-Recursive-solution-and-DFS-Iterative-solution-with-stack-and-BFS-Iterative-solution-with-queue
 
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
